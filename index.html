@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><title>本船スケジュール検索</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="style.css"></head>
+<body>
+<main><svg id="map" viewBox="0 0 960 500" preserveAspectRatio="xMidYMid meet"></svg>
+<p id="hint">港をクリックで出港地(POL)、続けて揚げ港(POD)を選択</p></main>
+<aside>
+<h1>本船スケジュール</h1>
+<div class="row"><span class="tag pol">POL</span><span id="pol"></span></div>
+<div class="row"><span class="tag pod">POD</span><span id="pod"></span></div>
+<div class="row"><label>出発日 <input type="date" id="start"> 〜 <input type="date" id="end"></label></div>
+<div class="row"><label>パスワード <input type="password" id="pw" autocomplete="off"></label></div>
+<div class="row"><button id="go" disabled>決定</button> <button id="reset" type="button">リセット</button></div>
+<div id="notice" hidden></div><div id="results"></div>
+</aside>
+<script src="config.js"></script><script src="vendor/map-libs.js"></script><script src="app.js"></script>
+</body></html>
